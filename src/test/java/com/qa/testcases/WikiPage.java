@@ -11,7 +11,8 @@ public class WikiPage {
 	
 	@Test // it is used to execute our testcases
 	public void createAcount() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\qpsq01\\eclipse-workspace\\DevOps\\drivers\\chromedriver.exe");
+		String currDir = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", currDir+"\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://github.com/edureka-devops/selenium-website");
 		
